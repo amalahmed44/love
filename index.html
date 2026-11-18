@@ -1,0 +1,1329 @@
+
+<!DOCTYPE html>
+<html lang="so">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#f8eee7">
+<title>Sheekadeenna Jacaylka ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --wine:#71343e;
+  --wine-dark:#54242e;
+  --rose:#d99ba0;
+  --rose-light:#f1d5d1;
+  --cream:#fff9f1;
+  --paper:#fffdf8;
+  --ink:#493538;
+  --muted:#9b7776;
+  --line:#eadbd0;
+  --shadow:0 15px 45px rgba(79,39,43,.09);
+}
+
+* {
+  box-sizing:border-box;
+}
+
+html {
+  width:100%;
+  min-height:100%;
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+}
+
+body {
+  width:100%;
+  min-width:0;
+  min-height:100vh;
+  margin:0;
+  overflow-x:hidden;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:'DM Sans',sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+button {
+  font:inherit;
+}
+
+img {
+  max-width:100%;
+}
+
+.script {
+  font-family:'Great Vibes',cursive;
+  font-weight:400;
+}
+
+.serif {
+  font-family:'Playfair Display',serif;
+}
+
+.page {
+  display:none;
+  width:100%;
+  min-height:100vh;
+  min-height:100svh;
+  overflow:hidden;
+}
+
+.page.active {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  animation:pageIn .45s ease both;
+}
+
+@keyframes pageIn {
+  from {
+    opacity:0;
+    transform:translateY(9px);
+  }
+  to {
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.container {
+  width:min(100% - 40px,1000px);
+  margin-inline:auto;
+}
+
+.eyebrow {
+  color:#aa7778;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.22em;
+  line-height:1.8;
+  text-transform:uppercase;
+}
+
+.small-heart {
+  color:#c77e88;
+  font-size:25px;
+}
+
+.btn {
+  min-height:48px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:13px 25px;
+  border:1px solid transparent;
+  border-radius:50px;
+  font-size:13px;
+  font-weight:700;
+  text-align:center;
+  text-decoration:none;
+  cursor:pointer;
+  transition:background .2s,transform .2s,box-shadow .2s;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.btn:hover {
+  transform:translateY(-2px);
+}
+
+.btn-primary {
+  background:var(--wine);
+  color:white;
+  box-shadow:0 7px 20px #71343e25;
+}
+
+.btn-primary:hover {
+  background:var(--wine-dark);
+}
+
+.btn-secondary {
+  color:var(--wine);
+  background:#fffdf8;
+  border-color:#ead9d0;
+}
+
+.btn-secondary:hover {
+  background:#fff;
+}
+
+.btn-rose {
+  color:var(--wine-dark);
+  background:#eac1bf;
+}
+
+.button-row {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px;
+  width:100%;
+}
+
+.decoration {
+  position:absolute;
+  pointer-events:none;
+  color:#cb9295;
+  opacity:.5;
+  font-family:serif;
+  animation:float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% {transform:translateY(0) rotate(-5deg)}
+  50% {transform:translateY(-12px) rotate(6deg)}
+}
+
+/* HOME */
+
+.home-page {
+  position:relative;
+  padding:65px 20px 30px;
+  text-align:center;
+  background-color:#fff7ee;
+  background-image:
+    linear-gradient(90deg,#edc5c033 50%,transparent 50%),
+    linear-gradient(#edc5c033 50%,transparent 50%);
+  background-size:32px 32px;
+}
+
+.home-content {
+  width:100%;
+  max-width:650px;
+  margin:auto;
+  position:relative;
+  z-index:1;
+}
+
+.home-title {
+  margin:17px 0 12px;
+  color:var(--wine);
+  font-size:clamp(65px,10vw,105px);
+  line-height:1.05;
+}
+
+.home-photo-frame {
+  width:min(220px,65vw);
+  margin:28px auto;
+  padding:9px 9px 15px;
+  background:var(--paper);
+  box-shadow:var(--shadow);
+  transform:rotate(-2deg);
+}
+
+.home-photo {
+  display:block;
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.home-description {
+  max-width:440px;
+  margin:0 auto 25px;
+  color:#846567;
+  font-family:'Playfair Display',serif;
+  font-size:15px;
+  font-style:italic;
+  line-height:2;
+}
+
+.home-signature {
+  margin-top:45px;
+  color:#a7837e;
+  font-family:'Playfair Display',serif;
+  font-size:12px;
+  font-style:italic;
+}
+
+/* QUESTION */
+
+.question-page {
+  padding:25px 18px;
+  position:relative;
+  background:#6d3540;
+  text-align:center;
+}
+
+.question-card {
+  width:min(100%,570px);
+  margin:auto;
+  padding:clamp(35px,7vw,65px) clamp(20px,6vw,50px);
+  background:var(--cream);
+  border:1px solid #ead9ca;
+  box-shadow:0 20px 65px #0002;
+  border-radius:5px;
+  position:relative;
+  z-index:1;
+}
+
+.question-title {
+  margin:15px 0;
+  color:var(--wine);
+  font-size:clamp(55px,10vw,85px);
+  line-height:1.15;
+}
+
+.question-description {
+  color:#987476;
+  font-family:'Playfair Display',serif;
+  font-size:15px;
+  font-style:italic;
+  line-height:1.8;
+}
+
+.question-buttons {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:13px;
+  flex-wrap:wrap;
+  margin:30px auto 0;
+}
+
+#noButton {
+  position:relative;
+}
+
+/* LETTER */
+
+.letter-page {
+  padding:65px 18px;
+  background:#f2e3da;
+}
+
+.letter-card {
+  width:min(100%,690px);
+  margin:auto;
+  padding:clamp(30px,6vw,58px);
+  position:relative;
+  background:var(--paper);
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+
+.letter-card:before {
+  content:"";
+  position:absolute;
+  inset:12px;
+  border:1px solid #eddfd3;
+  pointer-events:none;
+}
+
+.letter-content {
+  position:relative;
+  z-index:1;
+}
+
+.letter-title {
+  margin:12px 0 32px;
+  color:var(--wine);
+  font-size:clamp(53px,8vw,72px);
+  line-height:1.2;
+}
+
+.letter-body {
+  color:#674e4d;
+  font-family:'Playfair Display',serif;
+  font-size:15px;
+  line-height:2.05;
+}
+
+.letter-body p {
+  margin:0 0 19px;
+}
+
+.letter-signature {
+  margin:25px 0 30px;
+  color:var(--wine);
+  font-size:clamp(35px,7vw,49px);
+}
+
+/* MEMORIES */
+
+.memories-page {
+  padding:75px 20px 65px;
+  background:#65313b;
+  color:var(--cream);
+  text-align:center;
+}
+
+.memories-container {
+  width:min(100%,900px);
+  margin:auto;
+}
+
+.memories-title {
+  margin:15px 0;
+  font-size:clamp(65px,10vw,90px);
+  line-height:1.1;
+}
+
+.memories-description {
+  margin:0 auto 40px;
+  color:#e6c6c2;
+  font-family:'Playfair Display',serif;
+  font-size:15px;
+  font-style:italic;
+  line-height:1.8;
+}
+
+.album {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:28px;
+  width:100%;
+  align-items:start;
+}
+
+.polaroid {
+  min-width:0;
+  padding:10px 10px 17px;
+  background:#fffaf2;
+  color:var(--wine);
+  box-shadow:0 12px 28px #0002;
+  transition:transform .25s ease;
+}
+
+.polaroid:nth-child(odd) {
+  transform:rotate(-2deg);
+}
+
+.polaroid:nth-child(even) {
+  transform:rotate(2deg);
+}
+
+.polaroid:hover {
+  transform:rotate(0) translateY(-5px);
+}
+
+.polaroid img {
+  display:block;
+  width:100%;
+  aspect-ratio:4/5;
+  object-fit:cover;
+  background:#efded6;
+}
+
+.polaroid p {
+  margin:11px 0 0;
+  font-family:'Great Vibes',cursive;
+  font-size:27px;
+}
+
+.memories-caption {
+  margin:35px 0 28px;
+  color:#e6babc;
+  font-size:10px;
+  letter-spacing:.18em;
+  line-height:1.8;
+}
+
+/* LOVE REASONS */
+
+.reasons-page {
+  position:relative;
+  padding:70px 18px 55px;
+  text-align:center;
+  background:
+    radial-gradient(ellipse at top left,#fff8ef 0%,transparent 50%),
+    linear-gradient(145deg,#f8e9e2,#f3dce0 55%,#f8ebdc);
+}
+
+.reasons-container {
+  width:min(100%,700px);
+  margin:auto;
+  position:relative;
+  z-index:1;
+}
+
+.reasons-title {
+  margin:13px 0 12px;
+  color:var(--wine);
+  font-size:clamp(60px,10vw,96px);
+  line-height:1.1;
+}
+
+.reasons-description {
+  max-width:440px;
+  margin:0 auto;
+  color:#946c70;
+  font-family:'Playfair Display',serif;
+  font-size:15px;
+  font-style:italic;
+  line-height:1.9;
+}
+
+.jar-area {
+  width:220px;
+  height:250px;
+  margin:27px auto 4px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.jar {
+  width:170px;
+  height:185px;
+  position:relative;
+  border:4px solid #fffdf7;
+  border-radius:29px 29px 42px 42px;
+  background:linear-gradient(135deg,#ffffffa8,#eab1b966);
+  box-shadow:
+    inset -10px 0 25px #ffffff55,
+    0 15px 35px #74313c20;
+  cursor:pointer;
+  transition:transform .25s;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.jar:hover {
+  transform:translateY(-5px) rotate(-2deg);
+}
+
+.jar:before {
+  content:"";
+  position:absolute;
+  width:116px;
+  height:17px;
+  top:-15px;
+  left:50%;
+  transform:translateX(-50%);
+  background:#a75e69;
+  border:3px solid #fff4eb;
+  border-radius:7px;
+}
+
+.jar:after {
+  content:"♡";
+  position:absolute;
+  left:0;
+  right:0;
+  top:36%;
+  color:#a65365;
+  font-family:serif;
+  font-size:58px;
+  pointer-events:none;
+}
+
+.jar-note {
+  width:37px;
+  height:48px;
+  position:absolute;
+  background:#fff4d9;
+  border-radius:3px;
+  box-shadow:0 3px 7px #74313c20;
+}
+
+.jar-note:nth-child(1) {
+  left:20px;
+  bottom:18px;
+  transform:rotate(-12deg);
+}
+
+.jar-note:nth-child(2) {
+  left:66px;
+  bottom:10px;
+  transform:rotate(8deg);
+}
+
+.jar-note:nth-child(3) {
+  right:17px;
+  bottom:22px;
+  transform:rotate(-5deg);
+}
+
+.jar-note:nth-child(4) {
+  left:36px;
+  bottom:62px;
+  transform:rotate(14deg);
+}
+
+.jar-note:nth-child(5) {
+  right:34px;
+  bottom:65px;
+  transform:rotate(-10deg);
+}
+
+.jar-ribbon {
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  z-index:3;
+  transform:translateX(-50%);
+  font-size:24px;
+  pointer-events:none;
+}
+
+.jar-hint {
+  margin:0;
+  color:#a36f76;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+
+.reason-card {
+  width:min(100%,460px);
+  min-height:180px;
+  margin:25px auto 20px;
+  padding:30px 22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:#fffaf2;
+  border:1px solid #ead8c7;
+  border-radius:6px;
+  box-shadow:0 13px 35px #5b293018;
+  opacity:0;
+  transform:translateY(10px) scale(.98);
+  transition:opacity .35s,transform .35s;
+}
+
+.reason-card.visible {
+  opacity:1;
+  transform:translateY(0) scale(1);
+}
+
+.reason-number {
+  margin:0 0 13px;
+  color:#bd7c83;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.16em;
+}
+
+.reason-text {
+  margin:0;
+  color:#713b46;
+  font-family:'Playfair Display',serif;
+  font-size:clamp(19px,4vw,25px);
+  font-style:italic;
+  line-height:1.75;
+  overflow-wrap:anywhere;
+}
+
+.reason-heart {
+  margin-top:12px;
+  color:#c66b7b;
+  font-size:24px;
+}
+
+.reason-button {
+  min-height:47px;
+  padding:12px 25px;
+  border:0;
+  border-radius:50px;
+  background:var(--wine);
+  color:white;
+  font-size:13px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 7px 20px #71343e25;
+  transition:.2s;
+}
+
+.reason-button:hover {
+  background:var(--wine-dark);
+  transform:translateY(-2px);
+}
+
+.reason-counter {
+  margin:16px 0 0;
+  color:#956b70;
+  font-size:11px;
+}
+
+.reasons-closing {
+  margin:32px 0 0;
+  color:#8d3c47;
+  font-size:39px;
+  line-height:1.3;
+}
+
+.reason-decoration {
+  position:absolute;
+  color:#c77c8c;
+  opacity:.4;
+  font-size:28px;
+  pointer-events:none;
+}
+
+/* FOOTER */
+
+.site-footer {
+  width:100%;
+  padding:20px;
+  color:#a7837e;
+  text-align:center;
+  font-family:'Playfair Display',serif;
+  font-size:12px;
+}
+
+/* MOBILE */
+
+@media(max-width:700px) {
+
+  .container {
+    width:calc(100% - 32px);
+  }
+
+  .home-page {
+    padding:55px 18px 25px;
+  }
+
+  .home-title {
+    font-size:clamp(61px,17vw,83px);
+  }
+
+  .home-photo-frame {
+    width:min(190px,62vw);
+    margin:23px auto;
+  }
+
+  .home-photo {
+    height:225px;
+  }
+
+  .home-description {
+    max-width:340px;
+    font-size:14px;
+    line-height:1.9;
+  }
+
+  .question-card {
+    padding:42px 20px;
+  }
+
+  .question-title {
+    font-size:clamp(53px,15vw,70px);
+  }
+
+  .letter-page {
+    padding:30px 14px;
+  }
+
+  .letter-card {
+    padding:38px 25px;
+  }
+
+  .letter-title {
+    font-size:clamp(48px,13vw,64px);
+  }
+
+  .letter-body {
+    font-size:14px;
+    line-height:1.95;
+  }
+
+  .memories-page {
+    padding:55px 16px 45px;
+  }
+
+  .memories-title {
+    font-size:70px;
+  }
+
+  .memories-description {
+    margin-bottom:28px;
+    font-size:14px;
+  }
+
+  .album {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:17px 13px;
+  }
+
+  .polaroid {
+    padding:7px 7px 12px;
+  }
+
+  .polaroid p {
+    font-size:23px;
+  }
+
+  .reasons-page {
+    padding:55px 16px 40px;
+  }
+
+  .reasons-title {
+    font-size:clamp(58px,15vw,78px);
+  }
+
+  .reasons-description {
+    max-width:330px;
+    font-size:14px;
+  }
+
+  .jar-area {
+    margin:18px auto 0;
+    height:230px;
+  }
+
+  .reason-card {
+    min-height:165px;
+    padding:25px 18px;
+    margin:20px auto;
+  }
+
+  .reasons-closing {
+    font-size:34px;
+  }
+}
+
+@media(max-width:390px) {
+
+  .home-title {
+    font-size:60px;
+  }
+
+  .home-photo {
+    height:195px;
+  }
+
+  .btn {
+    max-width:100%;
+    padding:12px 19px;
+    font-size:12px;
+  }
+
+  .button-row {
+    gap:9px;
+  }
+
+  .album {
+    gap:12px 9px;
+  }
+
+  .polaroid p {
+    font-size:20px;
+  }
+
+  .reason-card {
+    padding:22px 15px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration:.01ms!important;
+    transition-duration:.01ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+
+<section id="home" class="page home-page">
+
+  <span class="decoration" style="top:9%;left:8%">♡</span>
+  <span class="decoration" style="top:18%;right:9%">✿</span>
+  <span class="decoration" style="bottom:18%;left:9%">♥</span>
+  <span class="decoration" style="bottom:12%;right:8%">♡</span>
+
+  <main class="home-content">
+
+    <p class="eyebrow">A LITTLE WEBSITE MADE WITH LOVE</p>
+
+    <h1 class="script home-title">
+      Qofkayga<br>qaaliga ah ♡
+    </h1>
+
+    <div class="home-photo-frame">
+      <img
+        class="home-photo"
+        src="photos/cover.jpg"
+        alt="Our favorite picture"
+      >
+    </div>
+
+    <p class="home-description">
+      Dunidan dad badan ayaa jooga,
+      laakiin qalbigaygu adiga ayuu doortay.
+      Maanta waxaan kuu sameeyey meel yar
+      oo ay ku kaydsan yihiin qaybo ka mid ah jacaylkayga.
+    </p>
+
+    <button class="btn btn-primary" onclick="showPage('question')">
+      Bilow sheekadeenna ♡
+    </button>
+
+    <p class="home-signature">
+      Made with all my love, just for you.
+    </p>
+
+  </main>
+</section>
+
+
+<!-- QUESTION -->
+
+<section id="question" class="page question-page">
+
+  <span class="decoration" style="top:12%;left:10%">♡</span>
+  <span class="decoration" style="bottom:12%;right:10%">♡</span>
+
+  <div class="question-card">
+
+    <span class="small-heart">♡</span>
+
+    <p class="eyebrow">BE HONEST WITH ME</p>
+
+    <h1 class="script question-title">
+      Ma i jeceshahay?
+    </h1>
+
+    <p class="question-description">
+      Hal su'aal oo keliya ayaan kuu hayaa...
+      jawaabtaadana waan sugayaa.
+    </p>
+
+    <div class="question-buttons">
+
+      <button class="btn btn-primary" onclick="showPage('letter')">
+        Haa, aad iyo aad! ♡
+      </button>
+
+      <button class="btn btn-secondary" id="noButton" type="button">
+        Maya 🙃
+      </button>
+
+    </div>
+
+    <p style="margin-top:27px;font-size:11px;color:#ad8b86">
+      (Doorashada saxda ah waad garanaysaa 😌)
+    </p>
+
+  </div>
+</section>
+
+
+<!-- LETTER -->
+
+<section id="letter" class="page letter-page">
+
+  <article class="letter-card">
+
+    <div class="letter-content">
+
+      <div style="text-align:center">
+
+        <p class="eyebrow">SOME WORDS FROM MY HEART</p>
+
+        <h1 class="script letter-title">
+          Warqad kuu gaar ah ♡
+        </h1>
+
+      </div>
+
+      <div class="letter-body">
+
+        <p>Qalbigayga qaaliga ah,</p>
+
+        <p>
+          Mararka qaar erayadu kuma filna inay sheegaan
+          waxa qalbigu dareemayo. Laakiin maanta waxaan
+          rabaa inaan isku dayo inaan kuu sheego inta aad
+          qiimo iigu leedahay.
+        </p>
+
+        <p>
+          Waxaad tahay qof noloshayda ku soo kordhiyey
+          farxad, qosol iyo xusuuso aanan marnaba
+          illoobi doonin. Ma aha oo keliya inaan ku jeclahay,
+          ee waxaan jeclahay qofka aan noqdo marka aan kula joogo.
+        </p>
+
+        <p>
+          Waxaan jeclahay sheekadeenna, qosolkeenna,
+          waqtiyada yaryar iyo xitaa waxyaabaha aan
+          dadka kale u muuqan wax weyn.
+        </p>
+
+        <p>
+          Haddii aan dib u dooran lahaa, mar kasta adiga
+          ayaan dooran lahaa. Maanta, berri iyo maalmaha
+          badan ee inoo soo socda.
+        </p>
+
+        <p>
+          Waad ku mahadsan tahay inaad tahay adiga.
+          Waad ku mahadsan tahay inaad qayb ka tahay
+          sheekadayda.
+        </p>
+
+        <p>
+          Waxaan rajaynayaa in bog kasta oo nolosheenna
+          ka mid ah uu noqdo mid ka qurux badan kii ka horreeyey.
+        </p>
+
+        <p>Weligaa ha ilaawin inta aan kuu hayo. ♡</p>
+
+      </div>
+
+      <div style="text-align:center">
+
+        <p class="script letter-signature">
+          Weligay adigaa qalbigayga leh.
+        </p>
+
+        <button class="btn btn-primary" onclick="showPage('memories')">
+          Xusuusteenna eeg →
+        </button>
+
+      </div>
+
+    </div>
+  </article>
+
+</section>
+
+
+<!-- MEMORIES -->
+
+<section id="memories" class="page memories-page">
+
+  <main class="memories-container">
+
+    <p class="eyebrow" style="color:#e9b8b8">
+      LITTLE MOMENTS, BIG MEMORIES
+    </p>
+
+    <h1 class="script memories-title">
+      Xusuusteenna ♡
+    </h1>
+
+    <p class="memories-description">
+      Sawirro yar, laakiin xusuuso waaweyn.
+    </p>
+
+    <div class="album">
+
+      <div class="polaroid">
+        <img src="photos/memory-1.jpg" alt="Our first memory">
+        <p>Our beginning ♡</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="photos/memory-2.jpg" alt="Our second memory">
+        <p>My favorite moment</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="photos/memory-3.jpg" alt="Our third memory">
+        <p>Just us</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="photos/memory-4.jpg" alt="Our fourth memory">
+        <p>A day to remember</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="photos/memory-5.jpg" alt="Our fifth memory">
+        <p>Forever favorite</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="photos/cover.jpg" alt="Our special memory">
+        <p>My person ♡</p>
+      </div>
+
+    </div>
+
+    <p class="memories-caption">
+      EVERY PICTURE HAS A STORY. EVERY STORY HAS YOU.
+    </p>
+
+    <button class="btn btn-rose" onclick="showPage('reasons')">
+      100 sabab oo aan kuu jeclahay →
+    </button>
+
+  </main>
+
+</section>
+
+
+<!-- LOVE REASONS -->
+
+<section id="reasons" class="page reasons-page">
+
+  <span class="reason-decoration" style="top:10%;left:8%">♡</span>
+  <span class="reason-decoration" style="top:20%;right:8%">✿</span>
+  <span class="reason-decoration" style="bottom:15%;left:10%">♥</span>
+  <span class="reason-decoration" style="bottom:18%;right:9%">♡</span>
+
+  <main class="reasons-container">
+
+    <p class="eyebrow">A LITTLE COLLECTION OF LOVE ♡</p>
+
+    <h1 class="script reasons-title">
+      100 Reasons<br>I Love You
+    </h1>
+
+    <p class="reasons-description">
+      Waxaa jira sababo badan oo aan kuu jeclahay...
+      mid mid ayaan kuugu ururiyey.
+    </p>
+
+    <div class="jar-area">
+
+      <button
+        class="jar"
+        id="loveJar"
+        type="button"
+        aria-label="Open a love note"
+      >
+        <span class="jar-note"></span>
+        <span class="jar-note"></span>
+        <span class="jar-note"></span>
+        <span class="jar-note"></span>
+        <span class="jar-note"></span>
+        <span class="jar-ribbon">🎀</span>
+      </button>
+
+    </div>
+
+    <p class="jar-hint">
+      TAP THE JAR TO PICK A LOVE NOTE
+    </p>
+
+    <div class="reason-card" id="reasonCard" aria-live="polite">
+
+      <p class="reason-number" id="reasonNumber">
+        A REASON TO LOVE YOU
+      </p>
+
+      <p class="reason-text" id="reasonText">
+        Taabo weelka si aad u furto warqad yar oo jacayl ah.
+      </p>
+
+      <span class="reason-heart">♡</span>
+
+    </div>
+
+    <button class="reason-button" id="anotherReason" type="button">
+      Open another note ♡
+    </button>
+
+    <p class="reason-counter" id="reasonCounter">
+      Your little collection of love.
+    </p>
+
+    <p class="script reasons-closing">
+      Sabab kasta waxay ku dhammaataa adiga. ♡
+    </p>
+
+    <button class="btn btn-primary" style="margin-top:22px" onclick="showPage('home')">
+      ← Bogga hore
+    </button>
+
+  </main>
+
+</section>
+
+
+<footer class="site-footer">
+  Made with love, for my favorite person ♡
+</footer>
+
+
+<script>
+
+/* PAGE NAVIGATION */
+
+const pageIds = [
+  'home',
+  'question',
+  'letter',
+  'memories',
+  'reasons'
+];
+
+function showPage(pageId, updateHistory = true) {
+
+  if (!pageIds.includes(pageId)) {
+    pageId = 'home';
+  }
+
+  document.querySelectorAll('.page').forEach(page => {
+    page.classList.remove('active');
+    page.setAttribute('aria-hidden','true');
+  });
+
+  const selectedPage = document.getElementById(pageId);
+
+  selectedPage.classList.add('active');
+  selectedPage.setAttribute('aria-hidden','false');
+
+  if (updateHistory && location.hash !== '#' + pageId) {
+    history.pushState({page:pageId},'', '#' + pageId);
+  }
+
+  window.scrollTo({top:0,left:0,behavior:'instant'});
+}
+
+
+/* BROWSER BACK AND FORWARD */
+
+window.addEventListener('popstate',() => {
+
+  const requestedPage = location.hash.slice(1);
+
+  showPage(
+    pageIds.includes(requestedPage) ? requestedPage : 'home',
+    false
+  );
+
+});
+
+
+/* INITIAL PAGE */
+
+const initialPage = location.hash.slice(1);
+
+showPage(
+  pageIds.includes(initialPage) ? initialPage : 'home',
+  false
+);
+
+
+/* NO BUTTON */
+
+const noButton = document.getElementById('noButton');
+
+function moveNoButton() {
+
+  const distance = Math.min(window.innerWidth * .16,65);
+  const x = (Math.random() * 2 - 1) * distance;
+  const y = (Math.random() * 2 - 1) * 45;
+
+  noButton.style.transform = `translate(${x}px,${y}px)`;
+}
+
+noButton.addEventListener('mouseenter',moveNoButton);
+
+noButton.addEventListener('touchstart',event => {
+  event.preventDefault();
+  moveNoButton();
+},{passive:false});
+
+noButton.addEventListener('click',event => {
+  event.preventDefault();
+  moveNoButton();
+});
+
+
+/* LOVE REASONS */
+
+const loveReasons = [
+
+  "Sababtoo ah qosolkaagu waa codka aan ugu jeclahay dunida.",
+
+  "Sababtoo ah waxaad iga dhigtaa qof faraxsan.",
+
+  "Sababtoo ah xitaa maalmaha caadiga ah waxaad ka dhigtaa kuwo gaar ah.",
+
+  "Sababtoo ah indhahaaga waxaan ka helaa deganaan.",
+
+  "Sababtoo ah waxaad tahay qofka aan jeclahay inaan wax walba la wadaago.",
+
+  "Sababtoo ah codkaagu mar walba wuu i farxad geliyaa.",
+
+  "Sababtoo ah waxaad iga dhigtaa inaan dareemo inaan ahay qof nasiib badan.",
+
+  "Sababtoo ah waan jeclahay sida aad u fikirto.",
+
+  "Sababtoo ah waxaad tahay qof aan mar walba dooran lahaa.",
+
+  "Sababtoo ah agtaada waxaan dareemaa inaan gurigaygii joogo.",
+
+  "Sababtoo ah xitaa markaad iga fog tahay, qalbigayga waad ku dhowdahay.",
+
+  "Sababtoo ah waxaad tahay qaybta ugu quruxda badan sheekadayda.",
+
+  "Sababtoo ah waxaan jeclahay inaan kula qoslo waxyaabaha yaryar.",
+
+  "Sababtoo ah waxaad leedahay meel qalbigayga ah oo cid kale aysan buuxin karin.",
+
+  "Sababtoo ah maalin kasta waxaan helaa sabab cusub oo aan kuu jeclaado.",
+
+  "Sababtoo ah waxaad tahay qofkayga gaarka ah.",
+
+  "Sababtoo ah mustaqbalka aan ku riyoodo adiga ayaa ku jira.",
+
+  "Sababtoo ah waxaan jeclahay inaan kula sameeyo xusuuso cusub.",
+
+  "Sababtoo ah waxaad tahay farxaddayda.",
+
+  "Sababtoo ah si fudud... waa adiga. Weligay adigaa qalbigayga leh. ♡"
+
+];
+
+
+let openedReasons = [];
+
+const loveJar = document.getElementById('loveJar');
+const anotherReason = document.getElementById('anotherReason');
+const reasonCard = document.getElementById('reasonCard');
+const reasonText = document.getElementById('reasonText');
+const reasonNumber = document.getElementById('reasonNumber');
+const reasonCounter = document.getElementById('reasonCounter');
+
+function openLoveReason() {
+
+  if (openedReasons.length === loveReasons.length) {
+    openedReasons = [];
+  }
+
+  const availableReasons = loveReasons
+    .map((reason,index) => index)
+    .filter(index => !openedReasons.includes(index));
+
+  const randomIndex = availableReasons[
+    Math.floor(Math.random() * availableReasons.length)
+  ];
+
+  openedReasons.push(randomIndex);
+
+  reasonCard.classList.remove('visible');
+
+  setTimeout(() => {
+
+    reasonText.textContent = loveReasons[randomIndex];
+
+    reasonNumber.textContent =
+      `LOVE NOTE ${openedReasons.length} OF ${loveReasons.length}`;
+
+    reasonCounter.textContent =
+      `${openedReasons.length} of ${loveReasons.length} little reasons discovered ♡`;
+
+    reasonCard.classList.add('visible');
+
+  },180);
+
+}
+
+loveJar.addEventListener('click',openLoveReason);
+anotherReason.addEventListener('click',openLoveReason);
+
+</script>
+
+</body>
+</html>
